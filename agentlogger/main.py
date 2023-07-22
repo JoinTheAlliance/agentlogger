@@ -86,12 +86,12 @@ def print_header(
     print(colored(ascii_logo, color))
 
 
-def write_to_log(
+def write_to_file(
     content, source=None, type=None, filename="events.log", separator_width=80
 ):
     """
     Writes content to the event log file.
-    
+
     Arguments:
     - content: String to be written in the log file
     - source: Source of the event, e.g. a function name or file

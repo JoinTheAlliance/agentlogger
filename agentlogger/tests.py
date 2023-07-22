@@ -2,7 +2,7 @@ import os
 from agentlogger import (
     log,
     print_header,
-    write_to_log,
+    write_to_file,
 )  # replace 'your_module' with the actual module name
 
 
@@ -22,9 +22,9 @@ def test_print_header():
     print_header("Test header", font="banner", color="green")
 
 
-def test_write_to_log():
+def test_write_to_file():
     filename = "test_events.log"
-    write_to_log(
+    write_to_file(
         "Test log content", source="test_source", type="info", filename=filename
     )
 
@@ -36,9 +36,9 @@ def test_write_to_log():
     assert not os.path.exists(filename)
 
 
-def test_write_to_log_no_type_no_source():
+def test_write_to_file_no_type_no_source():
     filename = "test_events.log"
-    write_to_log("Test log content", type="log", filename=filename)
+    write_to_file("Test log content", type="log", filename=filename)
 
     # assert that the file now exists
     assert os.path.exists(filename)
@@ -48,10 +48,10 @@ def test_write_to_log_no_type_no_source():
         print()
         print(f.read())
 
-    write_to_log(
+    write_to_file(
         "More log content",
         source="tests.py",
-        type="test_write_to_log_no_type_no_source",
+        type="test_write_to_file_no_type_no_source",
         filename=filename,
     )
 
