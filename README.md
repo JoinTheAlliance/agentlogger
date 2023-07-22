@@ -50,7 +50,11 @@ Here is an overview of the available functions:
 
 This function is used to create an event with provided metadata and saves it to the event log file.
 
-Arguments:
+#### Colors
+
+The available log color options are: black, red, green, yellow, blue, magenta, cyan and white. The color of your log will be determined by the type of the log, if the type log is in the dictionary. If the type is not in the log, it will look at the "color" argument. You can also provide your own type dictionary.
+
+#### Arguments:
 
 - `content`: Content of the event.
 - `source`: Source of the event, e.g. a function name. Defaults to None.
@@ -65,7 +69,15 @@ Arguments:
 
 This function displays a header with the provided text and color.
 
-Arguments:
+#### Header Fonts
+
+The header fonts come from the FIGlet library. You can find a list of available fonts [here](http://www.figlet.org/fontdb.cgi).
+
+#### Colors
+
+The color options are the same as the ones used in the `log` function: black, red, green, yellow, blue, magenta, cyan and white.
+
+#### Arguments:
 
 - `text`: Text to be displayed in the header. Defaults to "agentlogger".
 - `font`: Font to be used in the header. Defaults to "slant".
@@ -77,13 +89,34 @@ Arguments:
 
 This function writes content to the event log file.
 
-Arguments:
+#### Arguments:
 
 - `content`: Content to be written in the log file.
 - `source`: Source of the event, e.g. a function name. Defaults to None.
 - `type`: Type of the event. Defaults to None.
 - `filename`: Name of the file where the content will be written. Defaults to "events.log".
 - `separator_width`: Width of the separator. Defaults to 80.
+
+#### Default Type Colors
+
+Some log types are mapped to colors by default. You can also create your own dictionary and pass it to the `log` function. The default dictionary is:
+
+```
+unknown: white
+system: magenta
+info: blue
+warning: yellow
+success: green
+error: red
+start: green
+stop: red
+pause: yellow
+epoch: white
+summary: cyan
+reasoning: cyan
+action: green
+prompt: cyan
+```
 
 ## Examples
 
