@@ -21,7 +21,7 @@ setup(
     author_email="shawmakesmagic@gmail.com",
     license="MIT",
     packages=["agentlogger"],
-    install_requires=["openai", "tiktoken", "python-dotenv", "rich"],
+    install_requires=["rich", "termcolor", "pyfiglet"],
     readme="README.md",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",

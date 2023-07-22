@@ -1,10 +1,7 @@
-import dotenv
 from rich.panel import Panel
 from rich.console import Console
 from pyfiglet import figlet_format
 from termcolor import colored
-
-dotenv.load_dotenv()
 
 console = Console()
 
