@@ -67,7 +67,9 @@ def log(
 
     if panel:
         print("")
-        console.print(Panel("\n"+content+"\n", title=title, style=color, expand=expand))
+        console.print(
+            Panel("\n" + str(content) + "\n", title=title, style=color, expand=expand)
+        )
     else:
         console.print(content, style=color)
 
