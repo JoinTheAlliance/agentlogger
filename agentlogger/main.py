@@ -33,7 +33,7 @@ def log(
     type="info",
     color="blue",
     type_colors=DEFAULT_TYPE_COLORS,
-    expand=False,  # expand the panel?
+    expand=True,  # expand the panel?
     panel=True,  # display inside a bordered box panel?
     log=True,  # should log?
 ):
@@ -66,8 +66,8 @@ def log(
     color = type_colors.get(type, color)
 
     if panel:
-        print()
-        console.print(Panel(content, title=title, style=color, expand=expand))
+        print("")
+        console.print(Panel("\n"+content+"\n", title=title, style=color, expand=expand))
     else:
         console.print(content, style=color)
 

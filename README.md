@@ -46,7 +46,7 @@ write_to_file('More log content', source='tests.py', type='test_write_to_file')
 
 Here is an overview of the available functions:
 
-### `log(content, source=None, title="agentlogger", type="info", color="blue", type_colors=DEFAULT_TYPE_COLORS, expand=False, panel=True, log=True)`
+### `log(content, source=None, title="agentlogger", type="info", color="blue", type_colors=DEFAULT_TYPE_COLORS, expand=True, panel=True, log=True)`
 
 This function is used to create an event with provided metadata and saves it to the event log file.
 
@@ -61,7 +61,7 @@ The available log color options are: black, red, green, yellow, blue, magenta, c
 - `title`: Title of the event. Defaults to "agentlogger".
 - `type`: Type of the event. Defaults to "info".
 - `type_colors`: Dictionary with event types as keys and colors as values. Defaults to a predefined dictionary.
-- `expand`: Determines if the output should be within a Panel. Defaults to False.
+- `expand`: Determines if the output should be within a Panel. Defaults to True.
 - `panel`: Determines if the output should be displayed inside a bordered box panel. Defaults to True.
 - `log`: Determines if the output should be logged. Defaults to True.
 
