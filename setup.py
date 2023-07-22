@@ -12,7 +12,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="agentlogger",
-    version='0.1.0',
+    version='0.1.1',
     description="Simple, colorful debug logs and logfiles.",
     long_description=long_description,  # added this line
     long_description_content_type="text/markdown",  # and this line
