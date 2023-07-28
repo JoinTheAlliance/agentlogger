@@ -4,6 +4,9 @@ Simple, colorful terminal logs and logfiles.
 
 <img src="resources/image.jpg">
 
+[![Lint and Test](https://github.com/AutonomousResearchGroup/agentlogger/actions/workflows/test.yml/badge.svg)](https://github.com/AutonomousResearchGroup/agentlogger/actions/workflows/test.yml)
+[![PyPI version](https://badge.fury.io/py/agentlogger.svg)](https://badge.fury.io/py/agentlogger)
+
 # Installation
 
 ```bash
