@@ -1,4 +1,4 @@
-# agentlogger <a href="https://discord.gg/qetWd7J9De"><img style="float: right" src="https://dcbadge.vercel.app/api/server/qetWd7J9De" alt=""></a>
+# agentlogger
 
 Simple, colorful terminal logs and logfiles.
 
